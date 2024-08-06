@@ -2,30 +2,34 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@tripie/design-system": "workspace:*",
     "@tripie/hooks": "workspace:*",
+    "@types/react": "^18.3.3",
     "classnames": "^2.5.1",
-    "next": "15.0.0-rc.0",
-    "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522"
+    "local": "link:next/font/local",
+    "next": "^14",
+    "react": "^18.3",
+    "react-dom": "^18.3"
   },
   "devDependencies": {
-    "@tripie/eslint-config": "workspace:*",
-    "@tripie/typescript-config": "workspace:*",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.0-rc.0",
-    "node-sass": "^9.0.0",
-    "sass": "^1.77.6",
-    "typescript": "^5"
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8"
   }
 }
