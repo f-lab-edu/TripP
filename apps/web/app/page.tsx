@@ -3,7 +3,7 @@ import { Headers, Text } from "@tripie/design-system";
 import Container from "@tripie/design-system/components/container/_container";
 import UnstyledLink from "@tripie/design-system/components/typography/link/_link";
 import Paragraph from "@tripie/design-system/components/typography/paragraph/_paragraph";
-import ThemeButton from "../components/ThemeButton";
+import ThemeButton from "../components/ThemeButton/ThemeButton";
 
 export default function Home() {
   const text =
